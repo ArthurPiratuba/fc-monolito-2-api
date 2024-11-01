@@ -27,7 +27,6 @@ export default class Invoice extends BaseEntity implements AggregateRoot {
         this._document = props.document;
         this._address = props.address;
         this._items = props.items || [];
-        console.log(this._items);
     }
 
     addItem(name: string, price: number): void {
